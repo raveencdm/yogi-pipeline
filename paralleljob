@@ -2,7 +2,7 @@ pipeline{
 agent any
 stages
 {
-Stage ('build test and deploy')
+stage ('build test and deploy')
 {
 steps{
 echo "Building process"
