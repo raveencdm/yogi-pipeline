@@ -1,6 +1,18 @@
 pipeline{
+agent any
 stages
 {
-Stage ('build')
+Stage ('build test and deploy')
 {
-step {
+steps{
+echo "Building process"
+}
+steps{
+echo "Testing the Project"
+}
+steps{
+echo"Deploying the project"
+}
+}
+}
+}
