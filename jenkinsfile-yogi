@@ -1,29 +1,24 @@
 pipeline{
-agent any
-stages
-{
-stage{
-parallel
-{
-stage('Build')
-{
-steps{
-echo "Building the project----"
+agent any 
+stages {
+ stage ("Testing"){
+ parallel {
+  stage ("unit test")
+  {
+    echo ("unit test")
+    sleep 5
+  }
+stage ("integration test")
+  {
+    echo ("integration test")
+    sleep 5
+  }
 }
-}
-stage('Test')
-{
-steps{
-echo "Testing the project----"
-}
-}
-}
-}
-stage('Deploy')
-{
-steps{
-echo "Deploying the project----"
-}
-}
+stage ("white box test")
+  {
+    echo ("white box test")
+    sleep 5
+  }
+ }
 }
 }
