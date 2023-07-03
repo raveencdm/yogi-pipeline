@@ -17,7 +17,7 @@ stage("integration test") {
   }
 }
 }
-stage("integration test") {
+stage("unparallel test") {
   steps {
       echo 'unparallel test'
     sleep 5
