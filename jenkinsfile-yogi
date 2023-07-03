@@ -2,6 +2,7 @@ pipeline{
 agent any
 stages
 {
+stage{
 parallel
 {
 stage('Build')
@@ -14,6 +15,7 @@ stage('Test')
 {
 steps{
 echo "Testing the project----"
+}
 }
 }
 }
