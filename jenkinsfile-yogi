@@ -1,18 +1,22 @@
 pipeline{
-agent any 
-stages {
- stage("Testing"){
- parallel {
-  stage("unit test")
-  {
+ agent any 
+
+ stages {
+  stage ("Testing"){
+     parallel {
+        stage("unit test") {
+          steps {
     echo 'unit test'
     sleep 5
   }
-stage("integration test")
+}
+stage("integration test") {
+  steps {
   {
     echo 'integration test'
     sleep 5
   }
+}
 }
 stage("white box test")
   {
@@ -20,5 +24,6 @@ stage("white box test")
     sleep 5
   }
  }
+}
 }
 }
