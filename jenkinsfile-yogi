@@ -12,8 +12,14 @@ pipeline{
 }
 stage("integration test") {
   steps {
-  
-    echo 'integration test'
+      echo 'integration test'
+    sleep 5
+  }
+}
+}
+stage("integration test") {
+  steps {
+      echo 'integration test'
     sleep 5
   }
 }
