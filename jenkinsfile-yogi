@@ -1,5 +1,5 @@
 pipeline{
- agent any 
+agent any
 
  stages {
   stage ("Testing"){
@@ -15,7 +15,6 @@ stage("integration test") {
       echo 'integration test'
     sleep 5
   }
-}
 }
 stage("unparallel test") {
   steps {
