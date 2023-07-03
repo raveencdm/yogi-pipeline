@@ -19,7 +19,7 @@ stage("integration test") {
 }
 stage("integration test") {
   steps {
-      echo 'integration test'
+      echo 'unparallel test'
     sleep 5
   }
 }
