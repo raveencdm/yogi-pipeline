@@ -19,8 +19,7 @@ stage("integration test") {
 }
 }
 }
-stage("white box test")
-  {
+stage("white box test") {
     echo 'white box test'
     sleep 5
   }
