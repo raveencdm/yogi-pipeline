@@ -12,10 +12,11 @@ pipeline{
 }
 stage("integration test") {
   steps {
-  {
+  
     echo 'integration test'
     sleep 5
   }
+}
 }
 }
 stage("white box test")
@@ -23,7 +24,6 @@ stage("white box test")
     echo 'white box test'
     sleep 5
   }
- }
 }
 }
-}
+
