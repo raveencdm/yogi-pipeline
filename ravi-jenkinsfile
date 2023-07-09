@@ -2,7 +2,7 @@ stage('run-parallel-branches') {
   steps {
     parallel(
       a: {
-        echo "This is branch a"
+        echo "This is not branch a"
       },
       b: {
         echo "This is branch b"
