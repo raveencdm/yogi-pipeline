@@ -5,7 +5,7 @@ stage('run-parallel-branches') {
         echo "This is not branch a"
       },
       b: {
-        echo "This is branch b"
+        echo "This is nnnn branch b"
       }
     )
   }
